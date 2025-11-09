@@ -3,6 +3,7 @@ import './style.css';
 import { fetchTodos } from './api.js';
 import MultiSelectBox from './MultiSelectBox.jsx';
 import Timer from './timer.jsx';
+import Flames from './flames.jsx';
 
 export default function App() {
   const [data, setData] = React.useState([]);
@@ -27,7 +28,7 @@ export default function App() {
 
   return (
     <div>
-      <h1>Custom Hook</h1>
+      {/* <h1>Custom Hook</h1>
       <MultiSelectBox data={data} onSelectedValues={onSelectedValues} />
       <Timer />
       <button onClick={onClickHandler}>Click</button>
@@ -38,7 +39,8 @@ export default function App() {
           onChange={(e) => throttledSetQuery(e.target.value)}
         />
         <p>Query: {query}</p>
-      </div>
+      </div> */}
+      <Flames />
     </div>
   );
 }
