@@ -5,6 +5,7 @@ import MultiSelectBox from './MultiSelectBox.jsx';
 import Timer from './timer.jsx';
 import Flames from './flames.jsx';
 import TrafficLight from './TrafficLight.js';
+import TransferBox from './TransferBox/index.js';
 
 export default function App() {
   const [data, setData] = React.useState([]);
@@ -40,8 +41,9 @@ export default function App() {
           onChange={(e) => throttledSetQuery(e.target.value)}
         />
         <p>Query: {query}</p>
-      </div> */}
-      <TrafficLight />
+      </div>
+      <TrafficLight /> */}
+      <TransferBox />
     </div>
   );
 }
