@@ -8,6 +8,7 @@ export default function TransferBox() {
     { name: 'DEF', marks: '87%', registrationId: '5678', box: 'A' },
     { name: 'GHI', marks: '91%', registrationId: '9101', box: 'A' },
   ];
+
   const [items, setItems] = React.useState(itemList);
   const [selectedItemList, setSelectedItemList] = React.useState([]);
 
