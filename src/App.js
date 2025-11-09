@@ -4,6 +4,7 @@ import { fetchTodos } from './api.js';
 import MultiSelectBox from './MultiSelectBox.jsx';
 import Timer from './timer.jsx';
 import Flames from './flames.jsx';
+import TrafficLight from './TrafficLight.js';
 
 export default function App() {
   const [data, setData] = React.useState([]);
@@ -40,7 +41,7 @@ export default function App() {
         />
         <p>Query: {query}</p>
       </div> */}
-      <Flames />
+      <TrafficLight />
     </div>
   );
 }
