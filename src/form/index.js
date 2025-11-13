@@ -96,6 +96,7 @@ export default function StudentForm() {
               </td>
             </tr>
           ))}
+          {studentList.length === 0 ? <tr><td colSpan={4}>No Data Found</td></tr> : <></>}
         </tbody>
       </table>
     </>
