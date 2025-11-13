@@ -8,6 +8,7 @@ import TrafficLight from './TrafficLight.js';
 import TransferBox from './TransferBox/index.js';
 import ReduxAddition from './redux/redux-app.js';
 import ReactReduxApi from './react-redux-api/index.js';
+import StudentForm from './form/index.js';
 
 export default function App() {
   // const [data, setData] = React.useState([]);
@@ -46,8 +47,9 @@ export default function App() {
       </div>
       <TrafficLight />
       <TransferBox />
-      <ReduxAddition /> */}
-      <ReactReduxApi />
+      <ReduxAddition />
+      <ReactReduxApi /> */}
+      <StudentForm />
     </div>
   );
 }
