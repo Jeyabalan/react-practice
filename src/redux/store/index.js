@@ -1,6 +1,10 @@
-import { configureStore } from "@reduxjs/toolkit";
-import additionReducer from "./reducer";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
+import AdditionReducers from "./reducer";
+
+const rootReducer = combineReducers({
+    AdditionReducers
+})
 
 export const store = configureStore({
-    reducer: additionReducer
+    reducer: rootReducer
 })

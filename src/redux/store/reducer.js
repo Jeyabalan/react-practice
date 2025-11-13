@@ -1,12 +1,20 @@
 import initialState from './state'
-function additionReducer(state = initialState, action) {
+function AdditionReducers(state = initialState, action) {
     switch (action.type) {
         case 'ADD':
-            const { a, b } = action.payload
             return {
                 ...state,
-                result: a + b
+                result: action.payload.a + action.payload.b
             }
+        case 'SUB':
+            return {
+                ...state,
+                result: action.payload.a - action.payload.b
+            }
+            break
+        default:
+            return state
     }
 }
-export default additionReducer;
+
+export default AdditionReducers
