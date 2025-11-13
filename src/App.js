@@ -6,6 +6,7 @@ import Timer from './timer.jsx';
 import Flames from './flames.jsx';
 import TrafficLight from './TrafficLight.js';
 import TransferBox from './TransferBox/index.js';
+import ReduxAddition from './redux/redux-app.js';
 
 export default function App() {
   const [data, setData] = React.useState([]);
@@ -42,8 +43,9 @@ export default function App() {
         />
         <p>Query: {query}</p>
       </div>
-      <TrafficLight /> */}
-      <TransferBox />
+      <TrafficLight />
+      <TransferBox /> */}
+      <ReduxAddition />
     </div>
   );
 }
