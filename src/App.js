@@ -7,27 +7,28 @@ import Flames from './flames.jsx';
 import TrafficLight from './TrafficLight.js';
 import TransferBox from './TransferBox/index.js';
 import ReduxAddition from './redux/redux-app.js';
+import ReactReduxApi from './react-redux-api/index.js';
 
 export default function App() {
-  const [data, setData] = React.useState([]);
-  const [query, setQuery] = React.useState('');
-  const [selectedValues, setSelectedValues] = React.useState([]);
+  // const [data, setData] = React.useState([]);
+  // const [query, setQuery] = React.useState('');
+  // const [selectedValues, setSelectedValues] = React.useState([]);
 
-  React.useEffect(() => {
-    const fetchData = async () => {
-      const result = await fetchTodos();
-      setData(result);
-    };
-    fetchData();
-  }, []);
+  // React.useEffect(() => {
+  //   const fetchData = async () => {
+  //     const result = await fetchTodos();
+  //     setData(result);
+  //   };
+  //   fetchData();
+  // }, []);
 
-  const onSelectedValues = (values) => {
-    setSelectedValues(values);
-  };
+  // const onSelectedValues = (values) => {
+  //   setSelectedValues(values);
+  // };
 
-  const onClickHandler = () => {
-    const throttledValue = useThrottle('test');
-  };
+  // const onClickHandler = () => {
+  //   const throttledValue = useThrottle('test');
+  // };
 
   return (
     <div>
@@ -44,8 +45,9 @@ export default function App() {
         <p>Query: {query}</p>
       </div>
       <TrafficLight />
-      <TransferBox /> */}
-      <ReduxAddition />
+      <TransferBox />
+      <ReduxAddition /> */}
+      <ReactReduxApi />
     </div>
   );
 }
