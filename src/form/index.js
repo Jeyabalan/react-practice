@@ -53,7 +53,7 @@ export default function StudentForm() {
 
   return (
     <>
-      Student Form
+      <h1>Student Form</h1>
       <form onSubmit={formSubmit}>
         <div>
           <label>Name</label>
